@@ -26,7 +26,7 @@ public class login extends AppCompatActivity {
                 Intent intent = new Intent(login.this,register.class);
                 startActivity(intent);
 
-//                Toast.makeText(login.this,"Transfer to register page",Toast.LENGTH_LONG).show();
+                Toast.makeText(login.this,"Transfer to register page",Toast.LENGTH_LONG).show();
             }
         });
 
