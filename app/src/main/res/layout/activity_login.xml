@@ -10,7 +10,9 @@
     <!--text view for heading-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="#E0E0E0"
+        android:backgroundTint="#E0E0E0">
 
         <EditText
             android:id="@+id/editTextTextPassword"
@@ -30,13 +32,13 @@
         <Button
             android:id="@+id/loginButton"
             style="@style/Widget.Material3.Button.ElevatedButton"
-            android:layout_width="115dp"
-            android:layout_height="56dp"
+            android:layout_width="116dp"
+            android:layout_height="48dp"
 
             android:backgroundTint="#679907"
             android:text="LOGIN"
             android:textColor="@color/black"
-            android:textSize="15sp"
+            android:textSize="14sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.478"
@@ -47,13 +49,13 @@
         <Button
             android:id="@+id/loginButton3"
             style="@style/Widget.Material3.Button.ElevatedButton"
-            android:layout_width="115dp"
-            android:layout_height="56dp"
+            android:layout_width="116dp"
+            android:layout_height="48dp"
 
             android:backgroundTint="#679907"
             android:text="REGISTER"
             android:textColor="@color/black"
-            android:textSize="15sp"
+            android:textSize="14sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.478"
@@ -86,6 +88,30 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.718" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="220dp"
+            android:layout_height="145dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.45"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.096"
+            app:srcCompat="@drawable/logo2" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Developed By DarkSide"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.974" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
