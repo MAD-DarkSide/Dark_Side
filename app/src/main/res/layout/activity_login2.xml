@@ -15,7 +15,7 @@
         android:backgroundTint="#E0E0E0">
 
         <EditText
-            android:id="@+id/editTextTextPassword"
+            android:id="@+id/password"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="50dp"
@@ -31,8 +31,9 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.474" />
 
+        <!--button to register our new user-->
         <Button
-            android:id="@+id/registerButton"
+            android:id="@+id/loginButton"
             style="@style/Widget.Material3.Button.ElevatedButton"
             android:layout_width="116dp"
             android:layout_height="48dp"
@@ -51,7 +52,7 @@
             app:layout_constraintVertical_bias="0.636" />
 
         <EditText
-            android:id="@+id/editTextTextEmailAddress2"
+            android:id="@+id/userEmail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="50dp"
@@ -107,12 +108,22 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.974" />
 
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInparent="true"
+            android:visibiility = "gone"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="parent"
+            app:layout_constraintLeft_toRightOf="parent"
+
+            />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <!--edit text for user name-->
-
-    <!--edit text for user password-->
-
-    <!--button to register our new user-->
 
 </RelativeLayout>
