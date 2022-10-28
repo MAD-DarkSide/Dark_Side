@@ -95,6 +95,10 @@ public class login extends AppCompatActivity {
          @Override
          public void onClick(View view) {
 
+             Intent intent = new Intent(login.this,register.class);
+              startActivity(intent);
+              
+              Toast.makeText(login.this,"Transfer to register page",Toast.LENGTH_LONG).show();
              String email = useremail.getText().toString();
              String pass = password.getText().toString();
              loginuser(email , pass);
@@ -106,7 +110,7 @@ public class login extends AppCompatActivity {
          @Override
          public void onSuccess(AuthResult authResult) {
              Toast.makeText(login.this,"LogIn Successful", Toast.LENGTH_SHORT).show();
-             startActivity(new Intent(login.this, MainActivity.class));
+             startActivity(new Intent(login.this, homeActivity.class));
              finish();
 
          }
