@@ -11,7 +11,17 @@
           </Key>
         </deviceKey>
       </Target>
+<<<<<<< Updated upstream
     </runningDeviceTargetSelectedWithDropDown>
     <timeTargetWasSelectedWithDropDown value="2022-10-28T09:54:06.775596600Z" />
+=======
+<<<<<<< HEAD
+    </targetSelectedWithDropDown>
+    <timeTargetWasSelectedWithDropDown value="2022-10-28T10:13:33.161423Z" />
+=======
+    </runningDeviceTargetSelectedWithDropDown>
+    <timeTargetWasSelectedWithDropDown value="2022-10-28T09:54:06.775596600Z" />
+>>>>>>> a79118fd399e2eab9bad09e096a211e6d4faf1b5
+>>>>>>> Stashed changes
   </component>
 </project>
