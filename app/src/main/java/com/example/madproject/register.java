@@ -4,30 +4,117 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Patterns;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class register extends AppCompatActivity {
+import com.google.firebase.auth.FirebaseAuth;
 
-    TextView textView;
+import java.util.regex.Pattern;
+
+public class register extends AppCompatActivity implements View.OnClickListener {
+    private FirebaseAuth mAuth;
+    private EditText editTextTextEmailAddress2,editTextTextCompanyName,editTextPhone,editTextTextPassword;
+    private TextView banner;
+    private TextView textView, registerButton;
+    private ProgressBar progressBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register2);
 
+        mAuth = FirebaseAuth.getInstance();
+        textView = (TextView) findViewById(R.id.textView);
+        textView.setOnClickListener(this);
+
+        registerButton = (Button) findViewById(R.id.registerButton);
+
+        registerButton.setOnClickListener(this);
 
 
-        textView = (TextView)findViewById(R.id.textView);
-        textView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(register.this,login.class);
-                startActivity(intent);
+        editTextTextEmailAddress2 = (EditText) findViewById(R.id.userEmail);
+        editTextTextCompanyName = (EditText) findViewById(R.id.companyName);
+        editTextPhone = (EditText) findViewById(R.id.userPhone);
+        editTextTextPassword = (EditText) findViewById(R.id.password);
 
-                Toast.makeText(register.this,"Transfer to the login page",Toast.LENGTH_LONG).show();
-            }
-        });
+        //progressBar = (ProgressBar) findViewById(R.id.progressBar);
+
+
+
+
+//        textView = (TextView)findViewById(R.id.textView);
+//        textView.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(register.this,login.class);
+//                startActivity(intent);
+//
+//                Toast.makeText(register.this,"Transfer to the login page",Toast.LENGTH_LONG).show();
+//            }
+//        });
+
+
+    }
+
+    @Override
+    public void onClick(View v){
+
+        switch (v.getId()){
+            case R.id.textView:
+                startActivity(new Intent(this, login.class));
+                break;
+            case R.id.registerButton:
+                register();
+                break;
+        }
+
+    }
+
+    private void register(){
+        String useremail = editTextTextEmailAddress2.getText().toString().trim();
+        String companyname = editTextTextCompanyName.getText().toString().trim();
+        String userphone = editTextPhone.getText().toString().trim();
+        String password = editTextTextPassword.getText().toString().trim();
+
+        if (useremail.isEmpty()){
+            editTextTextEmailAddress2.setError("Email is Required");
+            editTextTextEmailAddress2.requestFocus();
+            return;
+
+        }
+        if (Patterns.EMAIL_ADDRESS.matcher(useremail).matches()){
+            editTextTextEmailAddress2.setError("Invalid Email!");
+            editTextTextEmailAddress2.requestFocus();
+            return;
+        }
+        if (companyname.isEmpty()){
+            editTextTextCompanyName.setError("Company Name is Required");
+            editTextTextCompanyName.requestFocus();
+            return;
+
+        }
+        if (userphone.isEmpty()){
+            editTextPhone.setError("Phone is Required");
+            editTextPhone.requestFocus();
+            return;
+
+        }
+        if (password.isEmpty()){
+            editTextTextPassword.setError("Password is Required");
+            editTextTextPassword.requestFocus();
+            return;
+
+        }
+        if(password.length() < 6){
+            editTextTextPassword.setError("Minimum password length is 6 characters!");
+            editTextTextPassword.requestFocus();
+            return;
+        }
+
     }
 }

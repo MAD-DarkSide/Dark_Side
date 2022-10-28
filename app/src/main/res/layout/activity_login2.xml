@@ -26,13 +26,13 @@
             android:minHeight="48dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.483"
+            app:layout_constraintHorizontal_bias="0.495"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.382" />
+            app:layout_constraintVertical_bias="0.474" />
 
         <Button
-            android:id="@+id/loginButton"
+            android:id="@+id/registerButton"
             style="@style/Widget.Material3.Button.ElevatedButton"
             android:layout_width="116dp"
             android:layout_height="48dp"
@@ -62,8 +62,10 @@
             android:minHeight="48dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.369" />
 
         <TextView
             android:id="@+id/textView2"
@@ -71,7 +73,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="50dp"
             android:layout_marginEnd="50dp"
-            android:text="Don't have an account?"
+            android:text="Don't have an account? REGISTER HERE"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
