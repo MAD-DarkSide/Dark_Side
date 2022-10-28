@@ -92,7 +92,7 @@ public class register extends AppCompatActivity implements View.OnClickListener 
             return;
 
         }
-        if (Patterns.EMAIL_ADDRESS.matcher(useremail).matches()){
+        if (!Patterns.EMAIL_ADDRESS.matcher(useremail).matches()){
             editTextTextEmailAddress2.setError("Invalid Email!");
             editTextTextEmailAddress2.requestFocus();
             return;
