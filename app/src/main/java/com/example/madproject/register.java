@@ -47,7 +47,7 @@ public class register extends AppCompatActivity implements View.OnClickListener 
         editTextPhone = (EditText) findViewById(R.id.userPhone);
         editTextTextPassword = (EditText) findViewById(R.id.password);
 
-        progressBar = (ProgressBar) findViewById(R.id.progressBar);
+//        progressBar = (ProgressBar) findViewById(R.id.progressBar);
 
 
 
@@ -122,7 +122,7 @@ public class register extends AppCompatActivity implements View.OnClickListener 
             editTextTextPassword.requestFocus();
             return;
         }
-        progressBar.setVisibility(View.VISIBLE);
+//        progressBar.setVisibility(View.VISIBLE);
 
         mAuth.createUserWithEmailAndPassword(useremail, password)
                 .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
@@ -138,12 +138,12 @@ public class register extends AppCompatActivity implements View.OnClickListener 
                                         public void onComplete(@NonNull Task<Void> task) {
                                             if (task.isSuccessful()){
                                                 Toast.makeText(register.this, "User has been Registered", Toast.LENGTH_LONG).show();
-                                                progressBar.setVisibility(View.GONE);
+//                                                progressBar.setVisibility(View.GONE);
 
                                             }
                                             else {
                                                 Toast.makeText(register.this, "Registration failed... Re-enter details", Toast.LENGTH_LONG).show();
-                                                progressBar.setVisibility(View.GONE);
+//                                                progressBar.setVisibility(View.GONE);
                                             }
                                         }
                                     });
@@ -152,7 +152,7 @@ public class register extends AppCompatActivity implements View.OnClickListener 
                         }
                         else {
                             Toast.makeText(register.this, "Registration failed", Toast.LENGTH_LONG).show();
-                            progressBar.setVisibility(View.GONE);
+//                            progressBar.setVisibility(View.GONE);
                         }
                     }
                 });

@@ -25,16 +25,16 @@ public class login extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
 
-//        textview = (TextView)findViewById(R.id.textView2);
-//        textview.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(login.this,register.class);
-//                startActivity(intent);
-//
-//                Toast.makeText(login.this,"Transfer to register page",Toast.LENGTH_LONG).show();
-//            }
-//        });
+        textview = (TextView)findViewById(R.id.textView2);
+        textview.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(login.this,register.class);
+                startActivity(intent);
+
+                Toast.makeText(login.this,"Transfer to register page",Toast.LENGTH_LONG).show();
+            }
+        });
 
         TextView userEmail = (TextView) findViewById(R.id.userEmail);
         TextView password = (TextView) findViewById(R.id.password);
@@ -43,28 +43,28 @@ public class login extends AppCompatActivity {
         userEmail = (EditText) findViewById(R.id.userEmail);
 
 
-        Button loginbtn = (Button) findViewById(R.id.loginButton);
-        loginbtn.setOnClickListener(this::onClick);
+//        Button loginbtn = (Button) findViewById(R.id.loginButton);
+//        loginbtn.setOnClickListener(this::onClick);
 
 //        loginbtn.setOnClickListener(new View.OnClickListener() {
 //
 //        };
 
     }
-    public void onClick(View v){
-
-        switch (v.getId()){
-            case R.id.textView2:
-                startActivity(new Intent(this, register.class));
-                Toast.makeText(login.this, "Navigating to Registration page", Toast.LENGTH_LONG).show();
-
-                break;
-            case R.id.registerButton:
-                //login();
-                break;
-        }
-
-    }
+//    public void onClick(View v){
+//
+//        switch (v.getId()){
+//            case R.id.textView2:
+//                startActivity(new Intent(this, register.class));
+//                Toast.makeText(login.this, "Navigating to Registration page", Toast.LENGTH_LONG).show();
+//
+//                break;
+//            case R.id.registerButton:
+//                //login();
+//                break;
+//        }
+//
+//    }
 
 //    public void login(){
 //
