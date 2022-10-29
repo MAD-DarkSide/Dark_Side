@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:backgroundTint="#B4ED72"
-    tools:context=".register">
+    tools:context=".MainActivity">
 
     <!--text view for heading-->
     <androidx.constraintlayout.widget.ConstraintLayout
