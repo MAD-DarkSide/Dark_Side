@@ -8,10 +8,9 @@
     tools:context=".userprofile">
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/companyName1"
         android:layout_width="205dp"
         android:layout_height="30dp"
-        android:text="Name"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -54,7 +53,6 @@
         android:id="@+id/button"
         android:layout_width="116dp"
         android:layout_height="48dp"
-        android:backgroundTint="#4CAF50"
         android:text="Update"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -67,7 +65,6 @@
         android:id="@+id/button2"
         android:layout_width="119dp"
         android:layout_height="48dp"
-        android:backgroundTint="#E91E63"
         android:text="Delete"
         android:textColorHighlight="#FF4141"
         android:textColorLink="#FF2626"
