@@ -21,7 +21,7 @@
             android:name=".addsupplier"
             android:exported="false" />
         <activity
-            android:name=".supplierview"
+            android:name=".supplierview"></activity>
 =======
             android:name=".InventoryDetails"
             android:exported="false" />
