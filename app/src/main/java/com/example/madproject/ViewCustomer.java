@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.widget.Toast;
 
@@ -46,6 +47,10 @@ public class ViewCustomer extends AppCompatActivity {
         touchHelper.attachToRecyclerView(recyclerView);
 
         showData();
+//
+//        getSupportActionBar().setTitle("Customer");
+//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+//        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(green)));
     }
 
     private void filterList(String text) {
