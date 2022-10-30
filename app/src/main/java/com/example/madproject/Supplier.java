@@ -7,7 +7,7 @@ public class Supplier {
     String phone;
     String email;
     String description;
-    Timestamp regtime;
+    //Timestamp regtime;
 
     public Supplier() {
     }
@@ -44,11 +44,11 @@ public class Supplier {
         this.description = description;
     }
 
-    public Timestamp getRegtime() {
-        return regtime;
-    }
-
-    public void setRegtime(Timestamp regtime) {
-        this.regtime = regtime;
-    }
+//    public Timestamp getRegtime() {
+//        return regtime;
+//    }
+//
+//    public void setRegtime(Timestamp regtime) {
+//        this.regtime = regtime;
+//    }
 }
