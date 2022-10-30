@@ -112,7 +112,7 @@ public class InventoryDetails extends AppCompatActivity {
             HashMap<String,Object> map = new HashMap<>();
             map.put("id",id);
             map.put("name",name);
-            map.put("email",supplier);
+            map.put("supplier",supplier);
             map.put("Quantity",qty);
             map.put("Price",price);
             map.put("Description",descrip);

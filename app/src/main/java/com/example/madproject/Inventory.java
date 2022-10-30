@@ -8,6 +8,15 @@ public class Inventory {
     String U_price;
     String description;
 
+    public Inventory(String ID, String name, String supplier, String quantity, String u_price, String description) {
+        this.ID = ID;
+        this.name = name;
+        this.supplier = supplier;
+        this.quantity = quantity;
+        this.U_price = u_price;
+        this.description = description;
+    }
+
     public String getID() {
         return ID;
     }

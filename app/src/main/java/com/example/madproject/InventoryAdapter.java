@@ -92,9 +92,9 @@ public class InventoryAdapter extends RecyclerView.Adapter<InventoryAdapter.MyVi
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
-            name = itemView.findViewById(R.id.title_view);
-            U_price = itemView.findViewById(R.id.email_view);
-            quantity = itemView.findViewById(R.id.phone_view);
+            name = itemView.findViewById(R.id.name_view);
+            U_price = itemView.findViewById(R.id.price_view);
+            quantity = itemView.findViewById(R.id.qty_view);
 
         }
     }
