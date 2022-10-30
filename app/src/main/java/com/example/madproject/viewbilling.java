@@ -52,7 +52,7 @@ public class viewbilling extends AppCompatActivity {
     private void filterList(String text) {
         List<billing> filteredList = new ArrayList<>();
         for(billing billing:list){
-            if(billing.getBillnum().toLowerCase().contains(text.toLowerCase()));
+            if(billing.getId().toLowerCase().contains(text.toLowerCase()));
             filteredList.add(billing);
         }
         if(filteredList.isEmpty()){
