@@ -68,7 +68,7 @@ public class ViewInventory extends AppCompatActivity {
                     public void onComplete(@NonNull Task<QuerySnapshot> task) {
                         list.clear();
                         for (DocumentSnapshot snapshot:task.getResult()){
-                            Inventory inventory = new Inventory(snapshot.getString("id"),snapshot.getString("name"),snapshot.getString("supplier"),snapshot.getString("qty"),snapshot.getString("price"),snapshot.getString("descrip"));
+                            Inventory inventory = new Inventory(snapshot.getString("id"),snapshot.getString("name"),snapshot.getString("supplier"),snapshot.getString("Quantity"),snapshot.getString("Price"),snapshot.getString("Description"));
                             list.add(inventory);
                         }
                         adapter1.notifyDataSetChanged();
