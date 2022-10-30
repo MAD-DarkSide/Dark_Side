@@ -55,7 +55,7 @@
         app:srcCompat="@drawable/ic_baseline_privacy_tip_24" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/privacy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Privacy Policy"
@@ -68,7 +68,7 @@
         app:layout_constraintVertical_bias="0.659" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/support"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Support"
@@ -80,7 +80,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/profile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Profile"
