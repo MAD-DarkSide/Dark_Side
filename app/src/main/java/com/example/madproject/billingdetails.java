@@ -80,8 +80,8 @@ public class billingdetails extends AppCompatActivity {
         });
     }
 
-    private void updateToFirestore(String id, String name, String email, String phone){
-        db.collection("billing").document(id).update("billnum",name,"item",email,"qty",phone)
+    private void updateToFirestore(String id, String billnum, String item, String qty){
+        db.collection("billing").document(id).update("billnum",billnum,"item",item,"qty",qty)
                 .addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
