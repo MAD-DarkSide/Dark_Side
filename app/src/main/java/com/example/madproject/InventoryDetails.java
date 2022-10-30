@@ -30,11 +30,11 @@ public class InventoryDetails extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inventory_details);
 
-        edtName = findViewById(R.id.name_edit_txt);
-        edtSupplier = findViewById(R.id.email_edit_txt);
-        edtQuantity = findViewById(R.id.phone_edit_txt);
-        edtPrice = findViewById(R.id.phone_edit_txt);
-        edtDescription = findViewById(R.id.phone_edit_txt);
+        edtName = findViewById(R.id.name_edit_ID);
+        edtSupplier = findViewById(R.id.supplier_edit_txt);
+        edtQuantity = findViewById(R.id.qty_edit_txt);
+        edtPrice = findViewById(R.id.price);
+        edtDescription = findViewById(R.id.des_edit_txt);
 
         savebtn = findViewById(R.id.save_btn);
         viewbtn = findViewById(R.id.view_btn);
@@ -55,7 +55,7 @@ public class InventoryDetails extends AppCompatActivity {
             edtSupplier.setText(uSupplier);
             edtQuantity.setText(uQuantity);
             edtPrice.setText(uPrice);
-            edtDescription.setText("Description");
+            edtDescription.setText(uDescription);
         }else{
             savebtn.setText("Save");
         }

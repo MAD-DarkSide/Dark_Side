@@ -62,7 +62,7 @@ public class ViewInventory extends AppCompatActivity {
     }
 
     public  void showData(){
-        db.collection("Customer").get()
+        db.collection("Inventory").get()
                 .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                     @Override
                     public void onComplete(@NonNull Task<QuerySnapshot> task) {
