@@ -69,7 +69,7 @@ public class viewbilling extends AppCompatActivity {
                     public void onComplete(@NonNull Task<QuerySnapshot> task) {
                         list.clear();
                         for (DocumentSnapshot snapshot:task.getResult()){
-                            billing billing = new billing(snapshot.getString("Id"),snapshot.getString("billnum"),snapshot.getString("item"),snapshot.getString("qty"));
+                            billing billing = new billing(snapshot.getString("id"),snapshot.getString("billnum"),snapshot.getString("item"),snapshot.getString("qty"));
                             list.add(billing);
                         }
                         adapter2.notifyDataSetChanged();
