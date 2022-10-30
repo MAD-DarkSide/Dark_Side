@@ -42,7 +42,7 @@ public class billingdetails extends AppCompatActivity {
         Bundle bundle = getIntent().getExtras();
         if(bundle != null){
             savebtn.setText("Update");
-            uid = bundle.getString("uid");
+            uid = bundle.getString("uId");
             ubillnum = bundle.getString("ubillnum");
             uitem = bundle.getString("uitem");
             uqty = bundle.getString("uqty");
@@ -70,18 +70,18 @@ public class billingdetails extends AppCompatActivity {
 
                 Bundle bundle1 = getIntent().getExtras();
                 if(bundle1 != null){
-                    String Id = uid;
-                    updateToFirestore(Id, billnum, item,qty);
+                    String id = uid;
+                    updateToFirestore(id, billnum, item,qty);
                 }else{
-                    String Id = UUID.randomUUID().toString();
-                    savetoFirestore(Id,billnum,item,qty);
+                    String id= UUID.randomUUID().toString();
+                    savetoFirestore(id,billnum,item,qty);
                 }
             }
         });
     }
 
-    private void updateToFirestore(String Id, String name, String email, String phone){
-        db.collection("billing").document(Id).update("billnum",name,"item",email,"qty",phone)
+    private void updateToFirestore(String id, String name, String email, String phone){
+        db.collection("billing").document(id).update("billnum",name,"item",email,"qty",phone)
                 .addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
@@ -99,10 +99,10 @@ public class billingdetails extends AppCompatActivity {
                 });
     }
 
-    private void savetoFirestore(String Id, String billnum, String item, String qty){
+    private void savetoFirestore(String id, String billnum, String item, String qty){
         if(!billnum.isEmpty() && !item.isEmpty()){
             HashMap<String,Object> map = new HashMap<>();
-            map.put("id",Id);
+            map.put("id",id);
             map.put("billnum",billnum);
             map.put("item",item);
             map.put("qty",qty);
