@@ -28,11 +28,11 @@ public class billingdetails extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_customer_details);
+        setContentView(R.layout.activity_billingdetails);
 
-        edtbillnum = findViewById(R.id.name_edit_txt);
-        edtitem = findViewById(R.id.email_edit_txt);
-        edtqty = findViewById(R.id.phone_edit_txt);
+        edtbillnum = findViewById(R.id.billnum_edit_txt);
+        edtitem = findViewById(R.id.item_edit_txt);
+        edtqty = findViewById(R.id.qty_edit_txt);
 
         savebtn = findViewById(R.id.save_btn);
         viewbtn = findViewById(R.id.view_btn);
