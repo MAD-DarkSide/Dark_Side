@@ -13,6 +13,7 @@ public class homeActivity extends AppCompatActivity implements View.OnClickListe
     private ImageView customer;
     private ImageView inventory;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +27,8 @@ public class homeActivity extends AppCompatActivity implements View.OnClickListe
 
         inventory = (ImageView) findViewById(R.id.imageView4);
         inventory.setOnClickListener(this);
+
+
 
     }
 

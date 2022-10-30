@@ -22,29 +22,6 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class login extends AppCompatActivity implements View.OnClickListener {
 
-
-        //    TextView textview;
-//    private FirebaseAuth mAuth;
-//
-//
-//    @Override
-//    protected void onCreate(Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_login2);
-//
-//        mAuth = FirebaseAuth.getInstance();
-//
-//        textview = (TextView)findViewById(R.id.textView2);
-//        textview.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(login.this,register.class);
-//                startActivity(intent);
-//
-//                Toast.makeText(login.this,"Transfer to register page",Toast.LENGTH_LONG).show();
-//            }
-//        });
-//
         private TextView textView;
         private EditText editemail, editpassword;
         private Button login;

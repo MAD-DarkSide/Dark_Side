@@ -47,10 +47,7 @@ public class ViewCustomer extends AppCompatActivity {
         touchHelper.attachToRecyclerView(recyclerView);
 
         showData();
-//
-//        getSupportActionBar().setTitle("Customer");
-//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-//        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(green)));
+
     }
 
     private void filterList(String text) {
