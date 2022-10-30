@@ -1,44 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     android:elevation="8dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginLeft="10dp">
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
 
         <TextView
+            android:id="@+id/title_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/title_view"
+            android:layout_marginVertical="4dp"
             android:text="Customer Name"
             android:textColor="@color/black"
-            android:textSize="18sp"
-            android:layout_marginVertical="4dp"/>
+            android:textSize="18sp" />
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:id="@+id/email_view"
-            android:text="customer Email"
-            android:textSize="17sp"
-            android:layout_marginVertical="4dp"/>
-
-        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginVertical="4dp"
+            android:text="customer Email"
+            android:textSize="17sp" />
+
+        <TextView
             android:id="@+id/phone_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="4dp"
             android:text="Customer Contact Number"
-            android:textSize="17sp"
-            android:layout_marginVertical="4dp"/>
+            android:textSize="17sp" />
 
     </LinearLayout>
-
 
 
 </androidx.cardview.widget.CardView>
