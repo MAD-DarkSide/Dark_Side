@@ -20,7 +20,7 @@ public class homeActivity extends AppCompatActivity implements View.OnClickListe
         option = (ImageView)findViewById(R.id.option_icon);
         option.setOnClickListener(this);
 
-        supplier = (ImageView) findViewById(R.id.imageView4);
+        supplier = (ImageView) findViewById(R.id.imageView5);
         supplier.setOnClickListener(this);
 
     }
@@ -30,7 +30,7 @@ public class homeActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.option_icon:
                 startActivity(new Intent(this, menu.class));
                 break;
-            case R.id.imageView4:
+            case R.id.imageView5:
                 startActivity(new Intent(homeActivity.this, supplierview.class));
                 break;
         }
