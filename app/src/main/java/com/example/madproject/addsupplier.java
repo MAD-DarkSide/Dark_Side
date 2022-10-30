@@ -32,6 +32,8 @@ public class addsupplier extends AppCompatActivity {
         phone = findViewById(R.id.supplierPhone);
         des = findViewById(R.id.supplierDes);
 
+        savebtn = findViewById(R.id.addButton);
+
         savebtn.setOnClickListener((v)-> saveSupplier());
     }
 

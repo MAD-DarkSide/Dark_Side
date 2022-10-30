@@ -31,5 +31,10 @@
         android:layout_marginBottom="659dp"
         android:text="Supplier List" />
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyler_view"/>
+
 
 </RelativeLayout>
