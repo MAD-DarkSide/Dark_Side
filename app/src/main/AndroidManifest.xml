@@ -22,7 +22,7 @@
             android:exported="false" />
         <activity
             android:name=".supplierview"></activity>
-=======
+
             android:name=".InventoryDetails"
             android:exported="false" />
         <activity
