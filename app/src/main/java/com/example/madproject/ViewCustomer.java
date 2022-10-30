@@ -24,8 +24,6 @@ public class ViewCustomer extends AppCompatActivity {
     private RecyclerView recyclerView;
     private FirebaseFirestore db;
 
-    private SearchView searchView;
-
     private CustomerAdapter adapter;
     private List<Customer> list;
 
@@ -33,21 +31,6 @@ public class ViewCustomer extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_customer2);
-
-        searchView = findViewById(R.id.search_view);
-        searchView.clearFocus();
-        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-            @Override
-            public boolean onQueryTextSubmit(String query) {
-                return false;
-            }
-
-            @Override
-            public boolean onQueryTextChange(String newText) {
-                filterList(newText);
-                return true;
-            }
-        });
 
         recyclerView = findViewById(R.id.customer_list);
         recyclerView.setHasFixedSize(true);
