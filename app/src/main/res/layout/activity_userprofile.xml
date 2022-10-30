@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#DFDFDF"
+    android:background="#E0E0E0"
     tools:context=".userprofile">
 
     <TextView
@@ -46,7 +46,7 @@
         android:id="@+id/button"
         android:layout_width="116dp"
         android:layout_height="48dp"
-        android:backgroundTint="#8BC34A"
+        android:backgroundTint="#679907"
         android:text="Update"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -59,7 +59,7 @@
         android:id="@+id/button2"
         android:layout_width="119dp"
         android:layout_height="48dp"
-        android:backgroundTint="#E91E63"
+        android:backgroundTint="#D23604"
         android:text="Delete"
         android:textColorHighlight="#FF4141"
         android:textColorLink="#FF2626"
@@ -74,16 +74,16 @@
         android:id="@+id/logoutButton"
         android:layout_width="119dp"
         android:layout_height="48dp"
-        android:backgroundTint="#E91E63"
+        android:backgroundTint="#D23604"
         android:text="LOGOUT"
         android:textColorHighlight="#FF4141"
         android:textColorLink="#FF2626"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintHorizontal_bias="0.872"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.081" />
+        app:layout_constraintVertical_bias="0.152" />
 
     <TextView
         android:id="@+id/textView7"
@@ -116,4 +116,44 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.598" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#679907"
+        android:padding="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/back_icon1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+
+            android:gravity="center"
+            android:text="Profile"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/option_icon1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+
+            android:src="@drawable/ic_baseline_menu_24" />
+
+    </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

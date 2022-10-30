@@ -7,6 +7,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -18,14 +20,14 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-public class userprofile extends AppCompatActivity {
+public class userprofile extends AppCompatActivity implements View.OnClickListener{
 
     private FirebaseUser user;
     private DatabaseReference reference;
-
     private String userID;
-
     private Button logout;
+    private ImageView option;
+    private ImageView back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,11 +36,28 @@ public class userprofile extends AppCompatActivity {
 
         logout = (Button) findViewById(R.id.logoutButton);
 
+        option = (ImageView)findViewById(R.id.option_icon1);
+        option.setOnClickListener(this);
+
+        back = (ImageView)findViewById(R.id.back_icon1);
+        back.setOnClickListener(this);
+
+
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                FirebaseAuth.getInstance().signOut();
-                startActivity(new Intent( userprofile.this,login.class));
+
+
+                switch (view.getId()){
+                    case R.id.logoutButton:
+                        FirebaseAuth.getInstance().signOut();
+                        startActivity(new Intent( userprofile.this,login.class));
+
+                }
+
+
+
+
             }
         });
 
@@ -75,6 +94,17 @@ public class userprofile extends AppCompatActivity {
             }
         });
     }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.option_icon1:
+                startActivity(new Intent(userprofile.this, menu.class));
+
+            case R.id.back_icon1:
+                startActivity(new Intent(userprofile.this, homeActivity.class));
+    }
+}
 }
 
 
