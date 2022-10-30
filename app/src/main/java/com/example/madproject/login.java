@@ -109,7 +109,7 @@ public class login extends AppCompatActivity implements View.OnClickListener {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if(task.isSuccessful()){
-                        startActivity(new Intent(login.this, userprofile.class));
+                        startActivity(new Intent(login.this, homeActivity.class));
 
                     }else{
                         Toast.makeText(login.this,"Failed to login!", Toast.LENGTH_LONG).show();
