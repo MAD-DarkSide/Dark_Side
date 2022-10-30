@@ -10,6 +10,7 @@ import android.widget.Switch;
 
 public class homeActivity extends AppCompatActivity implements View.OnClickListener {
     private ImageView option;
+    private ImageView customer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,12 +20,18 @@ public class homeActivity extends AppCompatActivity implements View.OnClickListe
         option = (ImageView)findViewById(R.id.option_icon);
         option.setOnClickListener(this);
 
+        customer = (ImageView) findViewById(R.id.imageView7);
+        customer.setOnClickListener(this);
+
     }
 
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.option_icon:
                 startActivity(new Intent(this, menu.class));
+                break;
+            case R.id.imageView7:
+                startActivity(new Intent(this, CustomerDetails.class));
                 break;
         }
     }

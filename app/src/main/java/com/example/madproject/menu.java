@@ -38,6 +38,8 @@ public class menu extends AppCompatActivity implements View.OnClickListener{
         privacy = (TextView) findViewById(R.id.privacy);
         privacy.setOnClickListener(this);
 
+
+
     } // end of on create
 
     public void onClick(View v){
