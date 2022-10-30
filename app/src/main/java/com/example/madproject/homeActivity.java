@@ -11,6 +11,7 @@ import android.widget.Switch;
 public class homeActivity extends AppCompatActivity implements View.OnClickListener {
     private ImageView option;
     private ImageView customer;
+    private ImageView billing;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +24,9 @@ public class homeActivity extends AppCompatActivity implements View.OnClickListe
         customer = (ImageView) findViewById(R.id.imageView7);
         customer.setOnClickListener(this);
 
+        billing = (ImageView) findViewById(R.id.imageView6);
+        billing.setOnClickListener(this);
+
     }
 
     public void onClick(View v) {
@@ -32,6 +36,9 @@ public class homeActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.imageView7:
                 startActivity(new Intent(this, CustomerDetails.class));
+                break;
+            case R.id.imageView6:
+                startActivity(new Intent(this, billingdetails.class));
                 break;
         }
     }
