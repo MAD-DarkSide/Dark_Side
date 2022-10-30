@@ -33,6 +33,9 @@ public class homeActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.imageView5:
                 startActivity(new Intent(homeActivity.this, supplierview.class));
                 break;
+            case R.id.imageView8:
+                startActivity(new Intent(homeActivity.this, userprofile.class));
+                break;
         }
     }
 }
