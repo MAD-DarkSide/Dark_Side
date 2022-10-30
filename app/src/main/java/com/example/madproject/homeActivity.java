@@ -21,7 +21,7 @@ public class homeActivity extends AppCompatActivity implements View.OnClickListe
         option.setOnClickListener(this);
 
         customer = (ImageView) findViewById(R.id.imageView7);
-        option.setOnClickListener(this);
+        customer.setOnClickListener(this);
 
     }
 
