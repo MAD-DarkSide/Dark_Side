@@ -1,17 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="deploymentTargetDropDown">
-    <targetSelectedWithDropDown>
+    <runningDeviceTargetSelectedWithDropDown>
       <Target>
-        <type value="QUICK_BOOT_TARGET" />
+        <type value="RUNNING_DEVICE_TARGET" />
         <deviceKey>
           <Key>
-            <type value="VIRTUAL_DEVICE_PATH" />
-            <value value="$USER_HOME$/.android/avd/Pixel_5_API_32.avd" />
+            <type value="SERIAL_NUMBER" />
+            <value value="R58R31SRKRY" />
           </Key>
         </deviceKey>
       </Target>
+<<<<<<< Updated upstream
+    </runningDeviceTargetSelectedWithDropDown>
+    <timeTargetWasSelectedWithDropDown value="2022-10-28T09:54:06.775596600Z" />
+=======
+<<<<<<< HEAD
     </targetSelectedWithDropDown>
-    <timeTargetWasSelectedWithDropDown value="2022-10-27T16:33:10.539011Z" />
+    <timeTargetWasSelectedWithDropDown value="2022-10-28T10:13:33.161423Z" />
+=======
+    </runningDeviceTargetSelectedWithDropDown>
+    <timeTargetWasSelectedWithDropDown value="2022-10-28T09:54:06.775596600Z" />
+>>>>>>> a79118fd399e2eab9bad09e096a211e6d4faf1b5
+>>>>>>> Stashed changes
   </component>
 </project>
