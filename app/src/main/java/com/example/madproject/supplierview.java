@@ -17,6 +17,7 @@ public class supplierview extends AppCompatActivity {
         setContentView(R.layout.activity_supplierview);
 
         addbutton = findViewById(R.id.addButton);
+        addbutton.setOnClickListener(this::onClick);
 
         //addbutton.setOnClickListener((v)-> startActivity(new Intent(supplierview.this, addsupplier.class)));
     }
