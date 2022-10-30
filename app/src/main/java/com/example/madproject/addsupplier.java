@@ -35,7 +35,7 @@ public class addsupplier extends AppCompatActivity {
         savebtn.setOnClickListener((v)-> saveSupplier());
     }
 
-    private void saveSupplier() {
+    void saveSupplier() {
         String supName = email.getText().toString();
         String supEmail = name.getText().toString();
         String supPhone = phone.getText().toString();

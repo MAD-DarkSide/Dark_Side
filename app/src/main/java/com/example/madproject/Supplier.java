@@ -1,5 +1,6 @@
 package com.example.madproject;
 
+import java.sql.Date;
 import java.sql.Timestamp;
 
 public class Supplier {
@@ -7,6 +8,7 @@ public class Supplier {
     String phone;
     String email;
     String description;
+    //Date regdate;
     //Timestamp regtime;
 
     public Supplier() {
@@ -44,11 +46,11 @@ public class Supplier {
         this.description = description;
     }
 
-//    public Timestamp getRegtime() {
+//    public Date getRegtime() {
 //        return regtime;
 //    }
 //
-//    public void setRegtime(Timestamp regtime) {
+//    public void setRegtime( Date regtime) {
 //        this.regtime = regtime;
 //    }
 }

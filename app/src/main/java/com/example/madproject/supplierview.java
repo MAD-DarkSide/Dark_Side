@@ -17,19 +17,19 @@ public class supplierview extends AppCompatActivity {
         setContentView(R.layout.activity_supplierview);
 
         addbutton = findViewById(R.id.addButton);
-        addbutton.setOnClickListener(this::onClick);
+//        addbutton.setOnClickListener(this::onClick);
 
-        //addbutton.setOnClickListener((v)-> startActivity(new Intent(supplierview.this, addsupplier.class)));
+        addbutton.setOnClickListener((v)-> startActivity(new Intent(supplierview.this, addsupplier.class)));
     }
-    public void onClick(View v){
-        switch(v.getId()){
-            case R.id.addButton:
-                startActivity(new Intent(supplierview.this, addsupplier.class));
-                break;
+//    public void onClick(View v){
+//        switch(v.getId()){
+//            case R.id.addButton:
+//                startActivity(new Intent(supplierview.this, addsupplier.class));
+//                break;
+//
+//        }
+    }
 
-        }
-    }
-}
 
 
 
