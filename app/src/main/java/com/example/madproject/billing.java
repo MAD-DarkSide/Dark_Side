@@ -29,8 +29,8 @@ package com.example.madproject;
             return Id;
         }
 
-        public void setId(String id) {
-            Id = id;
+        public void setId(String Id) {
+            Id = Id;
         }
 
         public String getItem() {
